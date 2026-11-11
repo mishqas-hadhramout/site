@@ -1,0 +1,21 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#603313"><meta name="description" content="مطعم مشقاص حضرموت - أطباق حضرمية ويمنية أصيلة"><title>طلب حذف الحساب | مشقاص حضرموت</title><link rel="stylesheet" href="style.css"></head><body><header class="top"><div class="wrap nav">
+<a class="brand" href="index.html"><img src="assets/logo.jpg" alt="شعار مشقاص حضرموت"><span>مشقاص حضرموت</span></a>
+<nav class="links" aria-label="القائمة الرئيسية"><a href="index.html">الرئيسية</a><a href="terms.html">شروط الاستخدام</a><a href="privacy.html">سياسة الخصوصية</a><a href="delete%20account.html">حذف الحساب</a><a href="contact.html">اتصل بنا</a></nav>
+</div></header>
+<main class="page"><article class="wrap paper"><h1>طلب حذف الحساب والبيانات</h1>
+<p>يمكنك تقديم طلب لحذف حسابك والبيانات المرتبطة به في تطبيق مشقاص حضرموت.</p>
+<div class="notice"><strong>مدة المراجعة:</strong> بعد إرسال طلبك عبر واتساب، سيقوم فريق المطعم بمراجعته والتحقق من ملكية الحساب. قد تستغرق المراجعة من <strong>24 إلى 48 ساعة عمل</strong>. لا يتم حذف الحساب تلقائيًا عند إرسال النموذج.</div>
+<form id="deleteForm"><div><label for="phone">رقم الهاتف المرتبط بالحساب</label><input id="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="مثال: 711287050" required minlength="7"></div>
+<div><label for="details">معلومات إضافية (اختياري)</label><textarea id="details" rows="3" placeholder="أي معلومات تساعدنا في تحديد الحساب"></textarea></div>
+<button class="btn brown" type="submit">إرسال طلب حذف الحساب عبر واتساب</button><p class="small">اضغط «إرسال» داخل واتساب حتى يصل الطلب إلى المطعم.</p></form>
+<div id="status" class="status" role="status" aria-live="polite"></div>
+<h2>ماذا يحدث بعد إرسال الطلب؟</h2><ol><li>أرسل الرسالة التي ستظهر لك في واتساب.</li><li>يراجع فريق المطعم الطلب ويتحقق من ملكية الحساب.</li><li>قد نتواصل معك عند الحاجة إلى معلومات إضافية.</li><li>ننفذ حذف البيانات التي لا يلزم الاحتفاظ بها، ثم نبلغك عند اكتمال المعالجة.</li></ol>
+<p>للمساعدة: <a href="mailto:mshqashdrmwt47@gmail.com">mshqashdrmwt47@gmail.com</a> أو <a href="https://wa.me/967711287050">واتساب المطعم</a>.</article></main>
+<script>
+document.getElementById('deleteForm').addEventListener('submit',function(e){e.preventDefault();
+const phone=document.getElementById('phone').value.trim(), details=document.getElementById('details').value.trim();
+const message=['طلب حذف حساب - تطبيق مشقاص حضرموت','أرغب في حذف حسابي والبيانات المرتبطة به.','رقم الهاتف: '+phone,'معلومات إضافية: '+(details||'لا يوجد'),'أرجو مراجعة طلبي والتواصل معي للتحقق.'].join('\n');
+const status=document.getElementById('status');status.style.display='block';status.textContent='تم تجهيز طلبك. أرسله داخل واتساب ليصل إلى المطعم. بعد وصوله سيكون تحت المراجعة لمدة قد تصل إلى 24–48 ساعة عمل.';
+window.open('https://wa.me/967711287050?text='+encodeURIComponent(message),'_blank','noopener');});
+</script>
+<footer><div class="wrap foot"><div><strong>مطعم مشقاص حضرموت</strong><p>نكهة حضرمية أصيلة</p></div><div><p>الهاتف: <a href="tel:+967711287050">+967 711 287 050</a></p><p>البريد: <a href="mailto:mshqashdrmwt47@gmail.com">mshqashdrmwt47@gmail.com</a></p><p>العنوان: شارع جمال، جوار الفسيل للتجارة</p></div><div><a href="terms.html">شروط الاستخدام</a> · <a href="privacy.html">الخصوصية</a> · <a href="delete%20account.html">حذف الحساب</a> · <a href="contact.html">اتصل بنا</a></div></div></footer></body></html>

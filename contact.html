@@ -1,0 +1,27 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#603313"><meta name="description" content="مطعم مشقاص حضرموت - أطباق حضرمية ويمنية أصيلة"><title>اتصل بنا | مشقاص حضرموت</title><link rel="stylesheet" href="style.css"></head><body><header class="top"><div class="wrap nav">
+<a class="brand" href="index.html"><img src="assets/logo.jpg" alt="شعار مشقاص حضرموت"><span>مشقاص حضرموت</span></a>
+<nav class="links" aria-label="القائمة الرئيسية"><a href="index.html">الرئيسية</a><a href="terms.html">شروط الاستخدام</a><a href="privacy.html">سياسة الخصوصية</a><a href="delete%20account.html">حذف الحساب</a><a href="contact.html">اتصل بنا</a></nav>
+</div></header>
+<main><section class="hero"><div class="wrap hero-inner"><div class="tag">نحن هنا لخدمتكم</div><h1>اتصل بنا</h1><p>يسعدنا تواصلكم معنا للطلبات والاستفسارات والملاحظات. فريق مشقاص حضرموت يتطلع إلى خدمتكم.</p></div></section>
+<section class="page"><div class="wrap contact-grid">
+<div class="paper"><h2>معلومات التواصل</h2>
+<div class="contact-line"><b>الهاتف</b><a href="tel:+967711287050">+967 711 287 050</a></div>
+<div class="contact-line"><b>واتساب الطلبات والاستفسارات</b><a href="https://wa.me/967711287050">+967 711 287 050</a></div>
+<div class="contact-line"><b>البريد الإلكتروني</b><a href="mailto:mshqashdrmwt47@gmail.com">mshqashdrmwt47@gmail.com</a></div>
+<div class="contact-line"><b>عنوان المطعم</b>شارع جمال، جوار الفسيل للتجارة</div>
+</div>
+<div class="paper"><h2>أرسل لنا رسالة</h2><form id="contactForm">
+<label>الاسم<input id="name" required maxlength="100" placeholder="اكتب اسمك"></label>
+<label>رقم الهاتف<input id="phone" type="tel" required placeholder="رقم هاتفك للتواصل"></label>
+<label>موضوع الرسالة<select id="topic"><option>استفسار عام</option><option>طلب طعام</option><option>ملاحظة أو اقتراح</option><option>شكوى</option><option>موضوع آخر</option></select></label>
+<label>رسالتك<textarea id="message" rows="4" required maxlength="2000" placeholder="اكتب رسالتك هنا"></textarea></label>
+<button class="btn brown" type="submit">إرسال عبر واتساب</button><p class="small">ستفتح محادثة واتساب برسالتك جاهزة؛ اضغط إرسال داخل واتساب حتى تصل إلينا.</p>
+</form><div id="contactStatus" class="status" role="status"></div></div>
+</div></section></main>
+<script>
+document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();
+const text=['رسالة إلى مطعم مشقاص حضرموت','الاسم: '+document.getElementById('name').value.trim(),'الهاتف: '+document.getElementById('phone').value.trim(),'الموضوع: '+document.getElementById('topic').value,'الرسالة: '+document.getElementById('message').value.trim()].join('\n');
+document.getElementById('contactStatus').style.display='block';document.getElementById('contactStatus').textContent='أكمل إرسال الرسالة من خلال واتساب حتى تصل إلى فريق المطعم.';
+window.open('https://wa.me/967711287050?text='+encodeURIComponent(text),'_blank','noopener');});
+</script>
+<footer><div class="wrap foot"><div><strong>مطعم مشقاص حضرموت</strong><p>نكهة حضرمية أصيلة</p></div><div><p>الهاتف: <a href="tel:+967711287050">+967 711 287 050</a></p><p>البريد: <a href="mailto:mshqashdrmwt47@gmail.com">mshqashdrmwt47@gmail.com</a></p><p>العنوان: شارع جمال، جوار الفسيل للتجارة</p></div><div><a href="terms.html">شروط الاستخدام</a> · <a href="privacy.html">الخصوصية</a> · <a href="delete%20account.html">حذف الحساب</a> · <a href="contact.html">اتصل بنا</a></div></div></footer></body></html>
